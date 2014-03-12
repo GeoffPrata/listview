@@ -52,5 +52,10 @@
     window.document.title = $(this).index() + 1;  // index starts at 0 in JavaScript and at 1 in App Inventor
   });
   </script>
+  <script>
+  $(document).bind( "mobileinit", function(event) {
+   $.extend($.mobile.zoom, {locked:true,enabled:false});
+  });
+</script>
 </body>
 </html>
